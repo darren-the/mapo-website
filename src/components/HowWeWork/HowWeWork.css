@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'jakarta-light';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-medium';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-bold';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-semibold';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf')
+}
+
+.how-we-work-container {
+    width: 100%;
+    position: relative;
+}
+
+.how-we-work-top {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.steps-wrapper {
+    width: 32%;
+    position: relative;
+}
+
+.steps-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.step-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.step-number-item {
+    position: relative;
+}
+
+.step-circle {
+    height: 61px;
+    width: auto;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    line-height: 35.3px;
+    font-size: 27px;
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.step-desc {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.span01-wrapper {
+    height: 100%;
+    width: auto;
+}
+
+#span01 {
+    height: 207.12px;
+    width: auto;
+    margin: 0 21px;
+}
+
+#design-board {
+    height: auto;
+    width: auto;
+}
+
+.how-we-work-bottom {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.how-we-work-header {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    line-height: 75px;
+    color: #787EF2;
+    height: 100%;
+    width: 300px;
+    text-align: end;
+    margin-top: 18px;
+}

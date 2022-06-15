@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'jakarta-medium';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf')
+}
+  
+.btn-item {
+    position: relative;
+}
+
+.btn-bg {
+    position: relative;
+    top: -8px;
+    left: -7px;
+    height: 63px;
+    width: 277px;
+    border-radius: 1000px;
+    background-color: #7D82FC;
+    z-index: 0;
+    transition: all 250ms ease;
+}
+
+.btn-text {
+    position: absolute;
+    height: 63px;
+    width: 277px;
+    border-radius: 1000px;
+    background-color: rgba(0,0,0,0);
+    font-family: 'jakarta-medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    border: 3px solid black;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-text:hover ~ .btn-bg {
+    top: 0;
+    left: 0;
+}
