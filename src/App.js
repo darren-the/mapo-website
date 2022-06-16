@@ -3,6 +3,7 @@ import Showcase from './components/Showcase/Showcase'
 import Features from './components/Features/Features'
 import Experts from './components/Experts/Experts'
 import How from './components/How/How'
+import Plans from './components/Plans/Plans'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Features />
       <Experts />
       <How />
+      <Plans />
     </div>
   );
 }

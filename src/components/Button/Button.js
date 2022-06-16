@@ -8,8 +8,14 @@ const Button = (props) => {
             right: props.right,
             left: props.left,
         }}>
-        <button className="btn-text" style={{color: props.textColor}}>{props.text}</button>  
-        <div className="btn-bg" style={{backgroundColor: props.bgColor}}></div>
+        <button className="btn-text" style={{
+          color: props.textColor,
+          width: props.width
+        }}>{props.text}</button>  
+        <div className="btn-bg" style={{
+          backgroundColor: props.bgColor,
+          width: props.width
+        }}></div>
     </div>
   )
 }

@@ -33,7 +33,7 @@
 .features-container {
     position: relative;
     background-color: inherit;
-    width: 850px;
+    width: 59%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,7 +44,8 @@
     text-align: center;
     font-size: 25px;
     line-height: 26px;
-    height: 95px;
+    height: auto;
+    padding-bottom: 67.5px;
     color: #1B1B1B;
 }
 
@@ -63,8 +64,7 @@
     background-color: inherit;
     width: 100%;
     display: grid;
-    grid-template-columns: 212.5px 212.5px 212.5px;
-    column-gap: 7%;
+    grid-template-columns: 25% 25% 25%;
     justify-content: space-between;
 }
 

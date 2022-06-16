@@ -52,7 +52,7 @@ const Experts = () => {
 
         </div>
 
-        <div className="button-wrapper">
+        <div className="experts-button-wrapper">
             <Button text="See Plans"/>
         </div>
         
