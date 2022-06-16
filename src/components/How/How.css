@@ -25,31 +25,45 @@
     background-color: #e5e4ff;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 60px;
 }
 
 .how-container {
-    width: 100%;
+    width: 74.3%;
     position: relative;
 }
 
-.how-top {
+.how-header-wrapper {
+    position: relative;
     height: auto;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    justify-content: center;
 }
 
-.steps-wrapper {
-    width: 32%;
-    position: relative;
+.how-header {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    line-height: 75px;
+    color: #787EF2;
+    height: 100%;
+    width: auto;
+    text-align: center;
 }
 
 .steps-container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    row-gap: 60px;
+    display: grid;
+    /*
+    grid-template-columns: 338px 340px 360px;
+    column-gap: 16px;
+    */
+    grid-template-columns: 31.59% 31.78% 33.64%;
+    column-gap: 1.5%;
+    padding-top: 85px;
+    padding-bottom: 60px;
 }
 
 .step-item {
@@ -79,45 +93,20 @@
 }
 
 .step-desc {
-    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'jakarta-semibold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     line-height: 25px;
+    letter-spacing: -2%;
+    height: auto;
+    width: auto;
     display: flex;
     align-items: center;
     margin-left: 15px;
 }
 
-.span01-wrapper {
+#how-video {
+    position: relative;
     height: 100%;
-    width: auto;
-}
-
-#span01 {
-    height: 207.12px;
-    width: auto;
-    margin: 0 21px;
-}
-
-#design-board {
-    height: auto;
-    width: auto;
-}
-
-.how-bottom {
-    height: auto;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.how-header {
-    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 75px;
-    line-height: 75px;
-    color: #787EF2;
-    height: 100%;
-    width: 300px;
-    text-align: end;
-    margin-top: 18px;
+    right: 1%;
 }
