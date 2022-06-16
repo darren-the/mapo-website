@@ -18,12 +18,21 @@
     src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf')
 }
 
-.how-we-work-container {
+.how {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: #e5e4ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.how-container {
     width: 100%;
     position: relative;
 }
 
-.how-we-work-top {
+.how-top {
     height: auto;
     width: 100%;
     display: flex;
@@ -94,7 +103,7 @@
     width: auto;
 }
 
-.how-we-work-bottom {
+.how-bottom {
     height: auto;
     width: 100%;
     display: flex;
@@ -102,7 +111,7 @@
     justify-content: flex-end;
 }
 
-.how-we-work-header {
+.how-header {
     font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 75px;
     line-height: 75px;

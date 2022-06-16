@@ -8,7 +8,7 @@ const Middle = () => {
   return (
     <div className="middle">
       <div className="middle-container">
-        <Features />
+        
         <div className="middle-empty-space"></div>
         <WeHelpWith />
         <div className="middle-empty-space" style={{height: "40px"}}></div>
@@ -17,7 +17,6 @@ const Middle = () => {
         <HowWeWork />
         <div className="middle-empty-space"></div>
       </div>
-      <img src={require("../../assets/middle-left-shapes.png")} alt="middle left shapes" id="middle-left-shapes"></img>
     </div>
   )
 }
