@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'jakarta-light';
+    src: url('../../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-medium';
+    src: url('../../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-bold';
+    src: url('../../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-semibold';
+    src: url('../../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf')
+}
+
+.faqsc {
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.faqsc-button {
+    padding: 0;
+    border: none;
+    background: none;
+
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 35.3px;
+    letter-spacing: -2%;
+    text-align: start;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.faqsc-triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #787EF2;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.faqsc-triangle.active {
+    border-top-color: #FFFBF1;
+    transform: rotate(180deg);
+}
+
+.faqsc-desc {
+    height: auto;
+    width: 100%;
+    font-family: 'jakarta-light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    line-height: 35.3px;
+    letter-spacing: -2%;
+    text-align: start;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
