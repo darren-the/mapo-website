@@ -1,0 +1,40 @@
+.frames {
+    position: relative;
+    background-color: #fffbf0;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    align-items: center;
+    overflow-x: clip;
+}
+
+.frames-pane {
+    position: relative;
+    height: 400px;
+    width: auto;
+    left: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.frame {
+    z-index: 0;
+    position: relative;
+    height: 100%;
+    width: auto;
+    align-self: center;
+    transition: all 300ms ease;
+    cursor: pointer;
+    margin: -0.4%;
+}
+
+.frame:hover {
+    height: 120%;
+}
+
+
+
+.marquee-container {
+    width: 50%;
+}

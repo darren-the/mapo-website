@@ -19,7 +19,8 @@
 }
 
 .hero {
-  height: 800px;
+  height: auto;
+  width: auto;
   background-color: #e1e0fa;
   position: relative;
   padding-top: 120px;
