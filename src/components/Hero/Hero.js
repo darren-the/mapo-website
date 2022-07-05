@@ -1,20 +1,32 @@
 import './Hero.css'
+import logo from '../../assets/logo.svg'
+import heroRight from '../../assets/hero-right-image.svg'
 import Button from '../Button/Button'
 
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-centre-container">
-        <div className="main-header">Design for product</div>
-        <div className="sub-header">shipping quality designs with 0 meetings & unlimited revisions</div>
-        <Button top="75px" text="View Subscriptions"/>
+      <div className="hero-container">
+
+        <div className="hero-left-container">
+          
+          <div className="hero-logo-wrapper">
+            <img src={logo} width="96" alt="hero logo" id="hero-logo"/>
+          </div>
+
+          <div className="hero-header">Designing timeless digital experiences</div>
+
+          <div className="hero-sub-header">Subscription UI/UX that fulfils all your design needs, whenever you need it!</div>
+
+          <Button text="See Plans"/>
+
+        </div>
+
+        <div className="hero-right">
+          <img src={heroRight} alt="hero right" id="hero-right-images"></img>
+        </div>
+
       </div>
-      <img src={require("../../assets/logo.png")} alt="logo" id="hero-logo"></img>
-      <img src={require("../../assets/bottom_left_swirl.png")} alt="bottom left swil" id="hero-bottom-left-swirl"></img>
-      <img src={require("../../assets/bottom_left_shapes.png")} alt="bottom left shapes" id="hero-bottom-left-shapes"></img>
-      <img src={require("../../assets/top_right_swirl.png")} alt="top right swirl" id="hero-top-right-swirl"></img>
-      <img src={require("../../assets/top_right_shapes.png")} alt="top right shapes" id="hero-top-right-shapes"></img>
-      <img src={require("../../assets/happy bao.png")} alt="happy bao" id="happy-bao"></img>
     </div>      
   )
 }

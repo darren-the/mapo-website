@@ -5,40 +5,44 @@
   
 .btn-item {
     position: relative;
+    height: 70px;
+    width: 223px;
 }
 
-.btn-bg {
-    position: relative;
-    top: -8px;
-    left: -7px;
-    height: 63px;
-    width: 277px;
+.btn-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 97.75%;
     border-radius: 1000px;
-    background-color: #7D82FC;
+    background-color: #242424;
     z-index: 0;
     transition: all 250ms ease;
-}
-
-.btn-text {
-    position: absolute;
-    height: 63px;
-    width: 277px;
-    border-radius: 1000px;
-    background-color: rgba(0,0,0,0);
-    font-family: 'jakarta-medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-family: 'jakarta-semibold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
     color: white;
-    border: 3px solid black;
+    line-height: 1.875rem;
     text-align: center;
-    cursor: pointer;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-text:hover ~ .btn-bg {
-    top: 0;
-    left: 0;
+.btn-outline {
+    position: relative;
+    right: -2.25%;
+    bottom: -10%;
+    height: 90%;
+    width: 97.75%;
+    border-radius: 1000px;
+    background-color: rgba(0,0,0,0);
+    border: 3px solid #242424;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn-outline:hover ~ .btn-fill {
+    top: 10%;
+    left: 2.25%;
 }
