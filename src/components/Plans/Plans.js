@@ -6,65 +6,63 @@ const Plans = () => {
         <div className="plans">
             <div className="plans-container">
 
-                <div className="plans-header">Plans</div>
+                <div className="plans-header-container">
+                    <div className="plans-header">Plans</div>
+                    <div className="plans-book-container">
+                        <div className="plans-book-text">Let's chat desgin!</div>
+                        <Button text="Book Consultation" bgColor="#7D82FC" width="229px"/>
+                    </div>
+                </div>
 
                 <div className="plans-grid">
-
-                    <div className="plans-grid-left">
-
-                        <div className="cost-container">
-
-                            <div className="cost-text-bold">$7,500 AUD/Month</div>
-                            <div className="cost-text-normal">Pay monthly</div>
-
+                    
+                    <div id="plan-item1" className="plan-item">
+                        <div className="plan-item-cost-container plan-left-item-border">
+                            <div className="plan-item-cost-header">$6,500 AUD / Month</div>
+                            <div className="plan-item-cost-sub">Pay monthly</div>
                         </div>
-
-                        <div className="cost-container">
-
-                            <div className="cost-text-bold">$6,500 AUD/Month</div>
-                            <div className="cost-text-normal">Pay quarterly, save $1000</div>
-
-                        </div>
-
-                        <div className="plan-desc-container">
-
-                            <div className="plan-desc-bold">Design Board</div>
-                            <div className="plan-desc-normal">Unlimited revisions and designs for product & marketing</div>
-                            <div className="plan-desc-bold">No Meetings</div>
-                            <div className="plan-desc-normal">All project details are in Notion</div>
-
-                            <div className="plans-button-wrapper">
-                                <Button text="Get Started" width="200px"/>
+                        <div className="plan-item-desc-container plan-left-item-border">
+                            <div className="plan-item-desc-header">Design Board</div>
+                            <div className="plan-item-desc-text">Queue as many new designs or revisions as you like, and they will be completed one-by-one.</div>
+                            <div className="plan-item-button-wrapper">
+                                <Button text="Get Started"/>
                             </div>
-
                         </div>
-
-                        <div className="plan-desc-container">
-
-                            <div className="plan-desc-bold">Design Board</div>
-                            <div className="plan-desc-normal">Unlimited revisions and designs for product & marketing</div>
-                            <div className="plan-desc-bold">No Meetings</div>
-                            <div className="plan-desc-normal">All project details are in Notion</div>
-
-                            <div className="plans-button-wrapper">
-                                <Button text="Get Started" width="200px"/>
-                            </div>
-
-                        </div>
-
                     </div>
 
-                    <div className="plans-grid-right">
-                        <img src={require("../../assets/plans-right-shapes.png")} alt="plans right shapes" id="plans-right-shapes"></img>
-                        <img src={require("../../assets/consult-face.png")} alt="consult face" id="consult-face"></img>
-                        <div className="consult-text">Chat design with us!</div>
-                        <div className="plans-button-wrapper">
-                            <Button text="Book Consultation" width="200px" bgColor="white" textColor="black"/>
+                    <div id="plan-item2" className="plan-item">
+
+                        <div className="plan-item-best-value">Best Value</div>
+
+                        <div className="plan-item-cost-container plan-value-item-border">
+                            <div className="plan-item-cost-header">$5,500 AUD / Month</div>
+                            <div className="plan-item-cost-sub">Pay quarterly, save $1,000</div>
+                        </div>
+                        <div className="plan-item-desc-container plan-value-item-border">
+                            <div className="plan-item-desc-header">Design Board</div>
+                            <div className="plan-item-desc-text">Queue as many new designs or revisions as you like, and they will be completed one-by-one.</div>
+                            <div className="plan-item-button-wrapper">
+                                <Button text="Get Started"/>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="plan-item3" className="plan-item">
+                        <div className="plan-item-cost-container plan-right-item-border">
+                            <div className="plan-item-cost-header">$130 AUD / Hour</div>
+                            <div className="plan-item-cost-sub">Billed every 2 weeks</div>
+                        </div>
+                        <div className="plan-item-desc-container plan-right-item-border">
+                            <div className="plan-item-desc-header">Design Board</div>
+                            <div className="plan-item-desc-text">Queue as many new designs or revisions as you like, and they will be completed one-by-one.</div>
+                            <div className="plan-item-button-wrapper">
+                                <Button text="Get Started"/>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-
             </div>
         </div>
     )

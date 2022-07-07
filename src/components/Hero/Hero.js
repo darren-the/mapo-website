@@ -1,11 +1,12 @@
 import './Hero.css'
 import logo from '../../assets/logo.svg'
-import heroRight from '../../assets/hero-right-image.svg'
+import heroRight from '../../assets/test.svg'
 import Button from '../Button/Button'
 
 const Hero = () => {
   return (
     <div className="hero">
+
       <div className="hero-container">
 
         <div className="hero-left-container">

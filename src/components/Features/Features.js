@@ -1,4 +1,7 @@
 import './Features.css'
+import squares from '../../assets/feature-squares.svg'
+import heart from '../../assets/feature-heart.svg'
+import video from '../../assets/feature-video.svg'
 
 const Features = () => {
   return (
@@ -7,33 +10,25 @@ const Features = () => {
         <div className="features-container">
 
             <div className="features-header-wrapper">
-                <div className="features-header-bold">Unlimited designs & revisions </div>
-                <div className="features-header-normal">for a monthly subscription</div>
+                <div className="features-header-normal">Pay a fixed fee every month for </div>
+                <div className="features-header-bold">unlimited designs & revisions </div>
+                <div className="features-header-normal">to scale your business</div>
             </div>
 
             <div className="features-grid">
 
-                <div className="feature-wrapper">
-                    <div className="feature-img-wrapper">
-                        <img src={require("../../assets/feature-squares.png")} alt="squares" id="feature-img1"></img>
-                    </div>
+                <div className="feature-item">
+                    <img src={squares} alt="squares" id="feature-img1" className="feature-img"></img>
                     <div className="feature-text" id="feature-text1">All your design needs in one</div>
                 </div>
 
-                <div className="feature-wrapper">
-                    <div className="feature-img-wrapper">
-                        <img src={require("../../assets/feature-heart.png")} alt="heart" id="feature-img2"></img>
-                    </div>
+                <div className="feature-item">
+                    <img src={heart} alt="heart" id="feature-img2" className="feature-img"></img>
                     <div className="feature-text" id="feature-text2">Revised until you love it</div>
                 </div>
 
-                <div className="feature-wrapper">
-                    <div className="feature-img-wrapper">
-                        <div id="feature-img3">
-                            <img src={require("../../assets/feature-video.png")} alt="video" className="feature-img" id="feature-img3-video"></img>
-                            <img src={require("../../assets/feature-diagonal-line.png")} alt="diagonal line" id="feature-img3-line"></img>
-                        </div>
-                    </div>
+                <div className="feature-item">
+                    <img src={video} alt="video" id="feature-img3" className="feature-img"></img>
                     <div className="feature-text" id="feature-text3">Completely async - no meetings</div>
                 </div>
 

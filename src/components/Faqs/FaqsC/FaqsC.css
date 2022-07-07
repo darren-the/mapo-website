@@ -30,17 +30,22 @@
     padding: 0;
     border: none;
     background: none;
-
+    text-align: start;
     position: relative;
     height: auto;
     width: 100%;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.faqsc-button-label {
     font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     line-height: 35.3px;
     letter-spacing: -2%;
-    text-align: start;
-    cursor: pointer;
-    z-index: 1;
+    display: flex;
+    width: 90%;
 }
 
 .faqsc-triangle {
@@ -57,7 +62,7 @@
 }
 
 .faqsc-triangle.active {
-    border-top-color: #FFFBF1;
+    /* border-top-color: #FFFBF1; */
     transform: rotate(180deg);
 }
 
@@ -70,5 +75,5 @@
     letter-spacing: -2%;
     text-align: start;
     overflow: hidden;
-    transition: height 0.3s ease;
+    transition: all 0.3s ease;
 }

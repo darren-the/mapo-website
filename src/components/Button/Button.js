@@ -7,7 +7,7 @@ const Button = (props) => {
     }}>
 
       <button className="btn-outline" style={{
-        backgroundColor: props.bgColor,
+        borderColor: props.bgColor,
       }}></button>  
 
       <div className="btn-fill" style={{

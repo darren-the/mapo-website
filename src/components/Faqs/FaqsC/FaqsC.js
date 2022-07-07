@@ -11,7 +11,9 @@ const FaqsC = (props) => {
       <button 
         onClick={() => {setIsOpen(!isOpen)}}
         className="faqsc-button"
-      >{props.label}</button>
+      >
+        <span className="faqsc-button-label">{props.label}</span>
+      </button>
 
       <div className={
         isOpen ? "faqsc-triangle active" : "faqsc-triangle"
@@ -22,7 +24,7 @@ const FaqsC = (props) => {
         onClick={() => setIsOpen(!isOpen)}
         ref={descRef}
         style={isOpen ? {
-          height: descRef.current.scrollHeight + "px"
+          height: descRef.current.scrollHeight + "px",
         } : {
           height: "0px"
         }}>{props.children}

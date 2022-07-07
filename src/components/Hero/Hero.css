@@ -19,13 +19,12 @@
 }
 
 .hero {
-  height: auto;
   width: auto;
   background-color: #e1e0fa;
   position: relative;
   padding-top: 120px;
   padding-left: 130px;
-  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .hero-container {
@@ -33,6 +32,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-left-container {
@@ -74,11 +75,13 @@
   position: relative;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #hero-right-images {
   position: relative;
-  right: -70px;
+  right: 0;
 }
 
 #hero-desktop {
