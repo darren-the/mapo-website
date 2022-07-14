@@ -6,7 +6,7 @@ import Plans from './components/Plans/Plans'
 import Faqs from './components/Faqs/Faqs'
 import BottomLogo from './components/BottomLogo/BottomLogo'
 
-function App() {
+const App = () => {
   return (
     <div className="container">
       <Hero />

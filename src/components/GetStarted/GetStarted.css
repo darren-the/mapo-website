@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'jakarta-bold';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-semibold';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-light';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Light.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-medium';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'jakarta-regular';
+    src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf')
+}
+
+.getstarted {
+    height: auto;
+    width: auto;
+    background-color: #e5e4ff;
+    padding-top: 120px;
+    padding-left: 9.5%;
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+
+.getstarted-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.getstarted-top {
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-right: 7.5%;
+}
+
+.getstarted-top-back-wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.getstarted-top-back {
+    height: 1.875rem;
+    font-family: 'jakarta-medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    letter-spacing: -2%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.getstarted-bottom {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 55px;
+}
+
+.getstarted-form { 
+    height: auto;
+    width: 100%;
+}
+
+.getstarted-form-header {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4.375rem;
+    line-height: 5rem;
+    letter-spacing: -2%;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.getstarted-form-text-container {
+    height: auto;
+    width: 87.5%;
+}
+
+.getstarted-form-text-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.getstarted-form-text-label {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -2%;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.getstarted-form-text-input {
+    background: transparent;
+    font-family: 'jakarta-light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -2%;
+    color: black;
+    border: 3px solid #FFFBF1;
+    outline: 0;
+    padding: 11px 1.5%;
+}
+
+.getstarted-form-text-input:focus {
+    border-color: black;
+}
+
+.getstarted-form-invalid-email {
+    border: 3px solid red;
+}
+
+.getstarted-form-text-error {
+    font-family: 'jakarta-light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -2%;
+    color: red;
+    margin-top: 5px;
+}
+
+.getstarted-form-checkbox-header {
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -2%;
+    color: black;
+}
+
+.getstarted-form-checkbox-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 12px;
+    padding-bottom: 20px;
+}
+
+.getstarted-form-checkbox-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.getstarted-form-checkbox-label {
+    font-family: 'jakarta-regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: -2%;
+    color: black;
+    margin-left: 4%;
+}
+
+.getstarted-form-checkbox-input {
+    appearance: none;
+    height: 27px;
+    width: 27px;
+    border: 3px solid #FFFBF1;
+}
+
+.getstarted-form-checkbox-input:checked {
+    border: 3px solid black;
+    
+}
+
+.getstarted-form-checkbox-input:after {
+    content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+#getstarted-right-bg {
+    position: absolute;
+    right: 0;
+}

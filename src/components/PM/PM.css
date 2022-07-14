@@ -25,12 +25,17 @@
     padding-bottom: 105px;
 }
 
+.pm-gradient-wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: green;
+}
+
 #hero-gradient {
-    height: 1590px;
-    width: auto;
+    width: 100%;
     position: absolute;
-    top: -1170px;
-    left: 0;
+    bottom: 100%; /* -1170px; */
     z-index: 0;
     overflow-y: visible;
 }

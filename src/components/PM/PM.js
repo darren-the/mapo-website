@@ -9,8 +9,11 @@ import Button from '../Button/Button'
 const PM = () => {
     return (
         <div className="pm">
-
-            <img src={gradient} alt="hero gradient" id="hero-gradient"/>
+            
+            <div className="pm-gradient-wrapper">
+                <img src={gradient} alt="hero gradient" id="hero-gradient"/>
+            </div>
+            
 
             <img src={leftShapes} alt="pm left shapes" id="pm-left-shapes"></img>
 

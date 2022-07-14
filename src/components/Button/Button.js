@@ -6,6 +6,8 @@ const Button = (props) => {
       width: props.width
     }}>
 
+      <button onClick={props._onClick} className="btn-overlay"></button>
+
       <button className="btn-outline" style={{
         borderColor: props.bgColor,
       }}></button>  
@@ -17,6 +19,10 @@ const Button = (props) => {
 
     </div>
   )
+}
+
+Button.defaultProps = {
+  link: "",
 }
 
 export default Button
