@@ -18,8 +18,10 @@ const Hero = () => {
           <div className="hero-header">Designing timeless digital experiences</div>
 
           <div className="hero-sub-header">Subscription UI/UX that fulfils all your design needs, whenever you need it!</div>
-
-          <Button text="See Plans"/>
+          
+          <div className="hero-button-wrapper">
+            <Button text="See Plans"/>
+          </div>
 
         </div>
 
@@ -28,8 +30,13 @@ const Hero = () => {
         </div>
 
       </div>
+
+      <div className="pm-gradient-wrapper">
+          <div id="hero-gradient"></div>
+      </div>
+
     </div>      
   )
 }
-
+//<img src={gradient} alt="hero gradient" id="hero-gradient"/>
 export default Hero

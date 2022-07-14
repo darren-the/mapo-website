@@ -1,5 +1,5 @@
 import './PM.css'
-import gradient from '../../assets/hero-gradient.svg'
+
 import square from '../../assets/pm-shape-square.svg'
 import circle from '../../assets/pm-shape-circle.svg'
 import triangle from '../../assets/pm-shape-triangle.svg'
@@ -10,9 +10,7 @@ const PM = () => {
     return (
         <div className="pm">
             
-            <div className="pm-gradient-wrapper">
-                <img src={gradient} alt="hero gradient" id="hero-gradient"/>
-            </div>
+            
             
 
             <img src={leftShapes} alt="pm left shapes" id="pm-left-shapes"></img>
