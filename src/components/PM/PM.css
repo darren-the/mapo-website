@@ -34,6 +34,7 @@
     grid-template-columns: 26.5% 73.5%;
     min-height: 395px;
     width: 71.5%;
+    z-index: 1;
 }
 
 .pm-heading {

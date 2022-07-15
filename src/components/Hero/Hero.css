@@ -23,6 +23,7 @@
   background-color: #e1e0fa;
   position: relative;
   padding-top: 120px;
+  padding-bottom: 200px;
 }
 
 .hero-container {
@@ -46,6 +47,9 @@
   position: relative;
   grid-area: logo;
 }
+#hero-logo {
+  height: 58px;
+}
 
 .hero-header {
   font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -64,7 +68,7 @@
   letter-spacing: -2%;
   color: #242424;
   padding-bottom: 60px;
-  grid-area: sub-header
+  grid-area: sub-header;
 }
 
 .hero-button-wrapper {
@@ -107,24 +111,24 @@
 }
 
 .hero-gradient-wrapper {
-  height: 200px;
+  height: 1000px;
   width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 91%;
+  background-color: #fffbf0; /* #fffbf0; */
+  z-index: 1;
 }
 
 #hero-gradient {
-  margin-top: 250px;
   background-image: url('../../assets/hero-gradient.svg');
   height: 1600px;
   width: 100%;
   background-size: cover;
-  position: relative;
+  position: absolute;
   z-index: 1;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position-x: center;
+  top: -700px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -139,6 +143,12 @@
 
 }
 
+@media screen and (max-width: 1150px) {
+  .hero-gradient-wrapper {
+    top: 95%;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .hero-header {
     font-size: 3.438rem;
@@ -147,6 +157,10 @@
 
   #hero-right-images {
     height: 485px;
+  }
+
+  .hero-gradient-wrapper {
+    top: 97.5%;
   }
 }
 
@@ -162,6 +176,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  .hero {
+    padding-bottom: 20px;
+  }
+
   .hero-container {
     grid-template-areas:
       'logo'
@@ -170,7 +188,7 @@
       'sub-header'
       'button';
       grid-template-columns: auto;
-      grid-template-rows: 110px auto auto auto auto;
+      grid-template-rows: 90px auto auto auto auto;
       margin-left: 0;
   }
 
@@ -178,16 +196,23 @@
     padding-left: 9%;
   }
 
+  #hero-logo {
+    height: 36px;
+  }
+
   .hero-header {
     font-size: 2.5rem;
     line-height: 3.125rem;
     padding-left: 9%;
     padding-right: 9%;
+    padding-bottom: 40px;
   }
 
   .hero-sub-header {
+    padding-top: 10px;
     padding-left: 9%;
     padding-right: 9%;
+    padding-bottom: 35px;
   }
 
   #hero-right-images {
@@ -203,10 +228,34 @@
   .hero-button-wrapper {
     display: flex;
     justify-content: center;
+    padding-bottom: 0;
+  }
+
+  .hero-gradient-wrapper {
+    top: 45%;
+  }
+
+  #hero-gradient {
+    background-image: url('../../assets/hero-gradient-mobile.svg');
+    top: -200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
+  .hero-gradient-wrapper {
+    top: 47%;
+  }
+}
+
+
+@media screen and (max-width: 451px) {
+  .hero-gradient-wrapper {
+    top: 49.5%;
+  }
+
   #hero-right-images {
     left: 10%;
   }
@@ -216,7 +265,21 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .hero-gradient-wrapper {
+    top: 46%;
+  }
+
+  #hero-gradient {
+    top: -150px;
+  }
+}
+
 @media screen and (max-width: 390px) {
+  .hero-gradient-wrapper  {
+    top: 51%;
+  }
+
   #hero-right-images {
     height: 363px;
     left: 0
@@ -224,5 +287,11 @@
 
   .hero-right {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .hero-gradient-wrapper {
+    top: 53%;
   }
 }

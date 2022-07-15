@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="hero-container">
 
         <div className="hero-logo-wrapper">
-          <img src={logo} width="96" alt="hero logo" id="hero-logo"/>
+          <img src={logo} alt="hero logo" id="hero-logo"/>
         </div>
         <div className="hero-right">
           <img src={heroRight} alt="hero right" id="hero-right-images"></img>
