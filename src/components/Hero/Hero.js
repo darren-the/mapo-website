@@ -3,14 +3,6 @@ import logo from '../../assets/logo.svg'
 import heroRight from '../../assets/test.svg'
 import Button from '../Button/Button'
 
-{/* 
-        <div className="hero-right">
-          <img src={heroRight} alt="hero right" id="hero-right-images"></img>
-        </div>
-<div className="hero-button-wrapper">
-  <Button text="See Plans"/>
-</div> */}
-
 const Hero = () => {
   return (
     <div className="hero">
