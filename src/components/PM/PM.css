@@ -13,6 +13,7 @@
     src: url('../../fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf')
 }
 
+
 .pm {
     position: relative;
     background-color: #fffbf0;
@@ -24,8 +25,6 @@
     padding-top: 180px;
     padding-bottom: 105px;
 }
-
-
 
 .pm-container {
     margin-left: 2.5%;
@@ -75,15 +74,10 @@
     width: 100%;
     position: relative;
     display: flex;
-}
-
-.pm-box-image {
-    background-image: url('../../assets/pm-box-2.svg');
+    background-image: url('../../assets/pm-box.svg');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 103.25% 100%;
-    position: absolute;
-    height: 100%;
-    width: 30px;
+    
 }
 
 .pm-box-grid {
@@ -91,11 +85,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-right: 3px solid #787EF2;
-    border-top: 3px solid #787EF2;
-    border-bottom: 3px solid #787EF2;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    z-index: -1;
 }
 
 .pm-box-grid-item {
@@ -108,20 +98,18 @@
     row-gap: 35px;
 }
 
-#pm-box-grid-item1 {
-    border-right: 3px solid #787EF2;
-}
-
 .pm-box-header {
-    font-family: 'jakarta-medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.563rem;
+    line-height: 2.206rem;
 }
 
 .pm-box-list {
     position: relative;
     list-style-type: none;
-    font-family: 'jakarta-light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
+    font-family: 'jakarta-medium', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.563rem;
 }
 
 .pm-box-list-item {
@@ -135,6 +123,7 @@
     position: absolute;
     left: 0;
     bottom: 130px;
+    z-index: 1;
 }
 
 .pm-button-wrapper {
@@ -144,4 +133,88 @@
     height: auto;
     width: 100%;
     padding-top: 65px;
+}
+
+@media screen and (max-width: 1440px) {
+    #pm-left-shapes {
+        left: auto;
+        right: 74%;
+    }
+}
+
+@media screen and (max-width: 1201px) {
+    #pm-left-shapes {
+        bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .pm-heading {
+        font-size: 3.4375rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #pm-square {
+        display: none;
+    }
+
+    #pm-circle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .pm {
+        padding-top: 65px;
+        padding-bottom: 45px;
+    }
+
+    .pm-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin: 0 0;
+        width: 60%;
+        min-width: 326px;
+    }
+
+    .pm-heading {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-bottom: 30px;
+    }
+
+    .pm-box {
+        background-image: url('../../assets/pm-box-mobile.svg')
+    }
+
+    .pm-box-grid {
+        margin-top: 24px;
+        margin-left: 0;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .pm-box-grid-item {
+        padding-bottom: 17px;
+    }
+
+    #pm-box-grid-item1 {
+        border-bottom: 3px solid #787EF2;
+    }
+
+    #pm-triangle {
+        display: none;
+    }
+
+    #pm-left-shapes {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .pm-container {
+        min-width: auto;
+        width: 85%;
+    }
 }
