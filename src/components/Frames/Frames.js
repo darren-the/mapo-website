@@ -11,27 +11,39 @@ const Frames = () => {
     const is1250px = useMediaQuery('only screen and (max-width: 1250px')
     const is950px = useMediaQuery('only screen and (max-width: 950px')
     const is750px = useMediaQuery('only screen and (max-width: 750px')
-    if (is750px) return { from: 850, to: -900 }
-    if (is950px) return { from: 750, to: -900 }
-    if (is1250px) return { from: 650, to: -900 }
-    if (is1440px) return { from: 500, to: -900 }
+    const is550px = useMediaQuery('only screen and (max-width: 550px')
+    if (is550px) return -1825
+    if (is750px) return -2425
+    if (is950px) return -2200
+    if (is1250px) return -1900
+    if (is1440px) return -1675
     return { from: 0, to: 0 }
   } 
-  const fromTo = useScreenWidth()
+
+  const isTouchScreen = useMediaQuery('(hover: none)')
+  const to = useScreenWidth()
 
   const refAnimate = useRef()
+  const refFrames = useRef()
   useEffect(() => {
-    gsap.fromTo(refAnimate.current, {x: fromTo.from}, {x: fromTo.to, scrollTrigger: {
-      trigger: refAnimate.current,
-      markers: false,
-      start: 'top 70%',
-      end: 'bottom 20%',
-      scrub: true
-    }})
-  }, [fromTo])
+    if (isTouchScreen) {
+      refFrames.current.style.overflowX = 'scroll'
+      //  TODO: how to remove gsap animation? Not urgent but if somehow a user switches
+      // from pc -> touchscreen, the animation will still remain when it should be removed.
+    } else {
+      refFrames.current.style.overflowX = 'clip'
+      gsap.fromTo(refAnimate.current, {x: 0}, {x: to, scrollTrigger: {
+        trigger: refAnimate.current,
+        markers: false,
+        start: 'top 70%',
+        end: 'bottom 20%',
+        scrub: true
+      }})
+    }
+  }, [to, isTouchScreen])
 
   return (
-    <div className="frames">
+    <div className="frames" ref={refFrames}>
 
         <div className="frames-pane" ref={refAnimate}>
           {[...Array(8).keys()].map(i => i + 1).map(x => 
