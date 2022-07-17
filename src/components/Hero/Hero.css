@@ -177,6 +177,7 @@
 
 @media screen and (max-width: 550px) {
   .hero {
+    padding-top: 40px;
     padding-bottom: 20px;
   }
 
@@ -232,7 +233,7 @@
   }
 
   .hero-gradient-wrapper {
-    top: 45%;
+    top: 40%;
   }
 
   #hero-gradient {
@@ -246,14 +247,14 @@
 
 @media screen and (max-width: 490px) {
   .hero-gradient-wrapper {
-    top: 47%;
+    top: 41.5%;
   }
 }
 
 
 @media screen and (max-width: 451px) {
   .hero-gradient-wrapper {
-    top: 49.5%;
+    top: 45.5%;
   }
 
   #hero-right-images {
@@ -267,7 +268,7 @@
 
 @media screen and (max-width: 430px) {
   .hero-gradient-wrapper {
-    top: 46%;
+    top: 41%;
   }
 
   #hero-gradient {
@@ -277,7 +278,7 @@
 
 @media screen and (max-width: 390px) {
   .hero-gradient-wrapper  {
-    top: 51%;
+    top: 46.5%;
   }
 
   #hero-right-images {
@@ -292,6 +293,6 @@
 
 @media screen and (max-width: 358px) {
   .hero-gradient-wrapper {
-    top: 53%;
+    top: 48.5%;
   }
 }

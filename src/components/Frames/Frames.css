@@ -36,9 +36,11 @@
     margin: -0.4%;
 }
 
+/*
 .frame:hover {
-    /* height: 120%; */
+    height: 120%;
 }
+*/
 
 .marquee-container {
     width: 50%;

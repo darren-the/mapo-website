@@ -10,7 +10,7 @@ const Features = () => {
         <div className="features-container">
 
             <div className="features-header-wrapper">
-                <div className="features-header-normal">Pay a fixed fee every month for </div>
+                <div className="features-header-normal">Pay a fixed monthly fee for </div>
                 <div className="features-header-bold">unlimited designs & revisions </div>
                 <div className="features-header-normal">to scale your business</div>
             </div>
