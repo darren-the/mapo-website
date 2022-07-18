@@ -31,10 +31,10 @@
   width: auto;
   display: grid;
   grid-template-areas:
-    'logo right-image'
-    'header right-image'
-    'sub-header right-image'
-    'button right-image';
+    'hero-logo hero-right-image'
+    'hero-header hero-right-image'
+    'hero-sub-header hero-right-image'
+    'hero-button hero-right-image';
   grid-template-columns: 50% 50%;
   grid-template-rows: 110px auto auto 1fr;
   position: relative;
@@ -45,8 +45,9 @@
 .hero-logo-wrapper {
   height: auto;
   position: relative;
-  grid-area: logo;
+  grid-area: 'hero-logo';
 }
+
 #hero-logo {
   height: 58px;
 }
@@ -58,7 +59,7 @@
   line-height: 5.625rem;
   letter-spacing: -2%;
   padding-bottom: 20px;
-  grid-area: header;
+  grid-area: hero-header;
 }
 
 .hero-sub-header {
@@ -68,11 +69,11 @@
   letter-spacing: -2%;
   color: #242424;
   padding-bottom: 60px;
-  grid-area: sub-header;
+  grid-area: hero-sub-header;
 }
 
 .hero-button-wrapper {
-  grid-area: button;
+  grid-area: hero-button;
   padding-bottom: 50px;
 }
 
@@ -82,7 +83,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  grid-area: right-image;
+  grid-area: hero-right-image;
 }
 
 #hero-right-images {
@@ -183,11 +184,11 @@
 
   .hero-container {
     grid-template-areas:
-      'logo'
-      'header'
-      'right-image'
-      'sub-header'
-      'button';
+      'hero-logo'
+      'hero-header'
+      'hero-right-image'
+      'hero-sub-header'
+      'hero-button';
       grid-template-columns: auto;
       grid-template-rows: 90px auto auto auto auto;
       margin-left: 0;

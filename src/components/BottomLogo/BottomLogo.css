@@ -1,6 +1,14 @@
 .bottom-logo {
     position: relative;
     background-color: #fffbf0;
-    height: 100px;
+    height: 110px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-logo-image {
+    height: 58px;
+    width: auto;
 }
