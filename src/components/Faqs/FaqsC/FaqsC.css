@@ -77,3 +77,13 @@
     overflow: hidden;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 350px) {
+    .faqsc-button-label {
+        font-size: 1.25rem;
+    }
+
+    .faqsc-desc {
+        font-size: 0.875rem;
+    }
+}

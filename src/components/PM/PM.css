@@ -39,10 +39,6 @@
 .pm-heading {
     height: auto;
     width: 100%;
-    color: #787EF2;
-    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4.375rem;
-    line-height: 5rem;
 }
 
 #pm-circle {
@@ -148,12 +144,6 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .pm-heading {
-        font-size: 3.4375rem;
-    }
-}
-
 @media screen and (max-width: 900px) {
     #pm-square {
         display: none;
@@ -178,9 +168,7 @@
         min-width: 326px;
     }
 
-    .pm-heading {
-        font-size: 2.5rem;
-        line-height: 3rem;
+    .pm-heading {  
         padding-bottom: 30px;
     }
 

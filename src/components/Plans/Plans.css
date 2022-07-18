@@ -61,10 +61,6 @@
 .plans-header {
     height: auto;
     width: 100%;
-    color: #787EF2;
-    font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4.375rem;
-    line-height: 4.688rem;
     text-align: start;
     grid-area: plans-header;
     padding-bottom: 45px
@@ -244,11 +240,6 @@
         border-bottom: 3px solid #E5E4FF;
     }
 
-    .plans-header {
-        font-size: 3.4rem;
-        line-height: 3.8rem;
-    }
-
     .plan-item-desc-container {
         padding-bottom: 155px;
     }
@@ -275,11 +266,6 @@
 @media screen and (max-width: 650px) {
     .plans-container {
         min-width: 330px;
-    }
-
-    .plans-header {
-        font-size: 2.5rem;
-        line-height: 3rem;
     }
 }
 

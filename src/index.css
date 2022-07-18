@@ -17,3 +17,23 @@
   margin: 0%;
   padding: 0%;
 }
+
+.heading2 {
+  color: #787EF2;
+  font-family: 'jakarta-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4.375rem;
+  line-height: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .heading2 {
+    font-size: 3.4375rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .heading2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}

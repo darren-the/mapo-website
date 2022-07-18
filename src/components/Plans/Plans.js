@@ -38,7 +38,7 @@ const Plans = () => {
         <div className="plans">
             <div className="plans-container">
 
-                <div className="plans-header">Plans</div>
+                <div className="plans-header heading2">Plans</div>
 
                 <div className="plans-book-container">
                     <div className="plans-book-text">Let's chat desgin!</div>

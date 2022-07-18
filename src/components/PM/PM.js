@@ -17,7 +17,7 @@ const PM = () => {
 
             <div className="pm-container">
 
-                <div className="pm-heading">Best in Class</div>
+                <div className="pm-heading heading2">Best in Class</div>
                 
                 <img src={circle} alt="pm circle" id="pm-circle"></img>
                 <img src={square} alt="pm square" id="pm-square"></img>

@@ -1,11 +1,14 @@
 import './Faqs.css'
 import FaqsC from './FaqsC/FaqsC'
+import topRightShapes from '../../assets/faqs-top-right-shapes.svg'
 
 const Faqs = () => {
     return (
         <div className="faqs">
+            <img src={topRightShapes} alt="faqs top right shapes" id="faqs-top-right-shapes"></img>
+
             <div className="faqs-container">
-                <div className="faqs-header">FAQs</div>
+                <div className="faqs-header heading2">FAQs</div>
 
                 <FaqsC label="Why wouldn't I hire a full-time designer?">
                     <p>
