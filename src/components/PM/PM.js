@@ -6,7 +6,7 @@ import triangle from '../../assets/pm-shape-triangle.svg'
 import leftShapes from '../../assets/pm-shape-left.svg'
 import Button from '../Button/Button'
 
-const PM = () => {
+const PM = (props) => {
     return (
         <div className="pm">
             
@@ -58,7 +58,7 @@ const PM = () => {
             </div>
 
             <div className="pm-button-wrapper">
-                <Button text="See Plans" width="283px"/>
+                <Button text="See Plans" width="283px" _onClick={() => {props.plansScrollRef.current.scrollIntoView({ behavior: 'smooth' })}}/>
             </div>
 
         </div>

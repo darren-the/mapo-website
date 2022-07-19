@@ -3,7 +3,7 @@ import Button from '../Button/Button'
 import { useNavigate } from 'react-router-dom'
 import { useRef, useEffect } from 'react' 
 
-const Plans = () => {
+const Plans = (props) => {
     const navigate = useNavigate()
     const getStartedClick = (value) => {
         navigate('/get-started', {
@@ -35,7 +35,7 @@ const Plans = () => {
     }, [])
 
     return (
-        <div className="plans">
+        <div className="plans" ref={props.plansScrollRef}>
             <div className="plans-container">
 
                 <div className="plans-header heading2">Plans</div>

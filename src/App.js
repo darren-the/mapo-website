@@ -5,15 +5,23 @@ import PM from './components/PM/PM'
 import Plans from './components/Plans/Plans'
 import Faqs from './components/Faqs/Faqs'
 import BottomLogo from './components/BottomLogo/BottomLogo'
+import { useRef, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const App = () => {
+  const plansScrollRef = useRef()
+  const location = useLocation()
+  useEffect(() => {
+    if (location.state.scrollToPlans) plansScrollRef.current.scrollIntoView()
+  }, [location])
+
   return (
     <div className="container">
-      <Hero />
+      <Hero plansScrollRef={plansScrollRef}/>
       <Frames />
-      <PM />
+      <PM plansScrollRef={plansScrollRef}/>
       <Features />
-      <Plans />
+      <Plans plansScrollRef={plansScrollRef}/>
       <Faqs />
       <BottomLogo />
     </div>

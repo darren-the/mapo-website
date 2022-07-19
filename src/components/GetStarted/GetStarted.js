@@ -1,5 +1,5 @@
 import './GetStarted.css'
-import { Link, useLocation } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import logo from '../../assets/logo.svg'
 import Button from '../Button/Button'
 import rightImage from '../../assets/getstarted-right-image.svg'
@@ -123,6 +123,15 @@ const GetStarted = () => {
     if (!isValidFields) event.preventDefault()
   }
 
+  const navigate = useNavigate()
+  const backButtonClick = () =>  {
+    navigate('/', {
+      state: {
+        scrollToPlans: true
+      }
+    })
+  }
+
   return (
     <div className="getstarted">
         <div className="getstarted-container">
@@ -130,7 +139,7 @@ const GetStarted = () => {
           <div className="getstarted-top">
             <img src={logo} width="96" alt="getstarted logo" id="getstarted-logo"/>
             <div className="getstarted-top-back-wrapper">
-              <Link to="/" className="getstarted-top-back">Back</Link>
+              <button onClick={backButtonClick} className="getstarted-top-back">Back</button>
             </div>
           </div>
 

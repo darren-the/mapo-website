@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 import heroRight from '../../assets/test.svg'
 import Button from '../Button/Button'
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className="hero">
 
@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="hero-header">Designing timeless digital experiences</div>
         <div className="hero-sub-header">Subscription UI/UX that fulfils all your design needs, whenever you need it!</div>
         <div className="hero-button-wrapper">
-          <Button text="See Plans"/>
+          <Button text="See Plans" _onClick={() => {props.plansScrollRef.current.scrollIntoView({ behavior: 'smooth' })}}/>
         </div>
         
       </div>
