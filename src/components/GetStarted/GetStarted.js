@@ -146,11 +146,13 @@ const GetStarted = () => {
           <div className="getstarted-bottom">
 
             <form className="getstarted-form" onSubmit={handleSubmit}>
-              <div className="getstarted-form-header">Queue your 1st design in minutes</div>
+              <div className="heading2 getstarted-form-header">Queue your 1st design in minutes</div>
               <div className="getstarted-form-text-container">{textItems}</div>
               <div className="getstarted-form-checkbox-header">What design services do you need? Select as many as you like.</div>
               <div className="getstarted-form-checkbox-container">{checkboxItems}</div>
-              <Button text="Open Trello" width="283px" _onClick={useTrello}/>
+              <div className="getstarted-form-button-wrapper">
+                <Button text="Open Trello" width="100%" _onClick={useTrello}/>
+              </div>
               <div className="getstarted-form-text-error" ref={submitErrorRef} style={{display: 'none'}}>There was an error submitting the form</div>
             </form>
             
