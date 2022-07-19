@@ -12,7 +12,11 @@ const App = () => {
   const plansScrollRef = useRef()
   const location = useLocation()
   useEffect(() => {
-    if (location.state.scrollToPlans) plansScrollRef.current.scrollIntoView()
+    if (!location.state) return
+    else if (location.state.scrollToPlans) {
+      plansScrollRef.current.scrollIntoView()
+    }
+    window.history.replaceState({}, document.title)
   }, [location])
 
   return (
