@@ -26,7 +26,7 @@ const Plans = (props) => {
             if (planCost2Ref.current.offsetHeight <= 127) {
                 planCost1Ref.current.style.height = planCost3Ref.current.style.height= 'auto'
             } else {
-                planCost1Ref.current.style.height = planCost3Ref.current.style.height = '205px'
+                planCost1Ref.current.style.height = planCost3Ref.current.style.height = '230px'
             }
         }
         window.addEventListener('resize', handler)
