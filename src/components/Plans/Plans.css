@@ -243,6 +243,7 @@
 
     .plan-item-desc-container {
         padding-bottom: 155px;
+        position: relative;
     }
 
     .plan-item-button-wrapper {
